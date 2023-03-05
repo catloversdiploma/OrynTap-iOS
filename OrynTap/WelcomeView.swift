@@ -7,16 +7,20 @@ struct WelcomeView: View {
     
     var body: some View {
         NavigationView {
-            ZStack(alignment: .top) {
-                Rectangle().fill(Gradient(colors: [.indigo, .purple])).ignoresSafeArea()
+            VStack(spacing: 100) {
+//                Rectangle().fill(Gradient(colors: [.indigo, .purple])).ignoresSafeArea()
                 Text("Welcome to OrynTap!").font(Font.custom("SFProText-Bold", size: 24))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
-                    .padding(EdgeInsets(top: 112, leading: 25, bottom: 700, trailing: 25))
+                    .padding(.leading, 40)
+                    .padding(.trailing, 40)
+                    .padding(.top, 104)
+                Spacer()
                 Text("Lorem ipsum dolor sit amet,  adipiscing").font(Font.custom("SFProText-Regular", size: 38))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.leading)
-                    .padding(EdgeInsets(top: 550, leading: 25, bottom: 144, trailing: 25))
+                    .padding(.leading, 25)
+                    .padding(.trailing, 25)
                 NavigationLink(destination: OnboardingView().navigationBarBackButtonHidden(true), isActive: $goesToOnboarding)
                 {
                     Button(action: {
@@ -31,11 +35,15 @@ struct WelcomeView: View {
                     .buttonStyle (.borderedProminent)
                     .buttonBorderShape (.capsule)
                     .controlSize (.large)
-                    .padding(EdgeInsets(top: 750, leading: 25, bottom: 80, trailing: 25))
                     .shadow(color: Color.black.opacity(0.3), radius: 10.0, x: 0, y: 2)
+                    .padding(.trailing, 25)
+                    .padding(.leading, 25)
+                    .padding(.bottom, 45)
                 }
                 .navigationTitle("")
-            }
+            }.background(
+                LinearGradient(gradient: Gradient(colors: [.indigo, .purple]), startPoint: .top, endPoint: .bottom)
+            )
         }
     }
 }
