@@ -7,18 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E07D72129AF4A9200CB3EFD /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E07D72029AF4A9200CB3EFD /* SignUpView.swift */; };
+		2E07D72329AF525300CB3EFD /* CodeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E07D72229AF525300CB3EFD /* CodeVerificationView.swift */; };
+		2E07D72529AF56FD00CB3EFD /* ChooseAccountTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E07D72429AF56FD00CB3EFD /* ChooseAccountTypeView.swift */; };
+		2E07D72729AF5E8B00CB3EFD /* SetUpProfileVuew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E07D72629AF5E8B00CB3EFD /* SetUpProfileVuew.swift */; };
 		2EBCF97B29AB4193003F6A1B /* OrynTapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCF97A29AB4193003F6A1B /* OrynTapApp.swift */; };
-		2EBCF97D29AB4193003F6A1B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCF97C29AB4193003F6A1B /* ContentView.swift */; };
+		2EBCF97D29AB4193003F6A1B /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCF97C29AB4193003F6A1B /* WelcomeView.swift */; };
 		2EBCF97F29AB4194003F6A1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EBCF97E29AB4194003F6A1B /* Assets.xcassets */; };
 		2EBCF98229AB4194003F6A1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EBCF98129AB4194003F6A1B /* Preview Assets.xcassets */; };
+		2EBCF99629AB41CD003F6A1B /* SFProText-HeavyItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EBCF98A29AB41CC003F6A1B /* SFProText-HeavyItalic.ttf */; };
+		2EBCF99729AB41CD003F6A1B /* SFProText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EBCF98B29AB41CC003F6A1B /* SFProText-Semibold.ttf */; };
+		2EBCF99829AB41CD003F6A1B /* SFProText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EBCF98C29AB41CC003F6A1B /* SFProText-Bold.ttf */; };
+		2EBCF99929AB41CD003F6A1B /* SFProText-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EBCF98D29AB41CC003F6A1B /* SFProText-BoldItalic.ttf */; };
+		2EBCF99A29AB41CD003F6A1B /* SFProText-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EBCF98E29AB41CC003F6A1B /* SFProText-RegularItalic.ttf */; };
+		2EBCF99B29AB41CD003F6A1B /* SFProText-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EBCF98F29AB41CC003F6A1B /* SFProText-MediumItalic.ttf */; };
+		2EBCF99C29AB41CD003F6A1B /* SFProText-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EBCF99029AB41CC003F6A1B /* SFProText-LightItalic.ttf */; };
+		2EBCF99D29AB41CD003F6A1B /* SFProText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EBCF99129AB41CC003F6A1B /* SFProText-Medium.ttf */; };
+		2EBCF99E29AB41CD003F6A1B /* SFProText-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EBCF99229AB41CC003F6A1B /* SFProText-SemiboldItalic.ttf */; };
+		2EBCF99F29AB41CD003F6A1B /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EBCF99329AB41CD003F6A1B /* SFProText-Regular.ttf */; };
+		2EBCF9A029AB41CD003F6A1B /* SFProText-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EBCF99429AB41CD003F6A1B /* SFProText-Heavy.ttf */; };
+		2EBCF9A129AB41CD003F6A1B /* SFProText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EBCF99529AB41CD003F6A1B /* SFProText-Light.ttf */; };
+		2EBCF9A429AB5146003F6A1B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCF9A329AB5146003F6A1B /* OnboardingView.swift */; };
+		2EBCF9A629AB8D38003F6A1B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCF9A529AB8D38003F6A1B /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E07D72029AF4A9200CB3EFD /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		2E07D72229AF525300CB3EFD /* CodeVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerificationView.swift; sourceTree = "<group>"; };
+		2E07D72429AF56FD00CB3EFD /* ChooseAccountTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAccountTypeView.swift; sourceTree = "<group>"; };
+		2E07D72629AF5E8B00CB3EFD /* SetUpProfileVuew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpProfileVuew.swift; sourceTree = "<group>"; };
 		2EBCF97729AB4193003F6A1B /* OrynTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrynTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EBCF97A29AB4193003F6A1B /* OrynTapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrynTapApp.swift; sourceTree = "<group>"; };
-		2EBCF97C29AB4193003F6A1B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2EBCF97C29AB4193003F6A1B /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		2EBCF97E29AB4194003F6A1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EBCF98129AB4194003F6A1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2EBCF98A29AB41CC003F6A1B /* SFProText-HeavyItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-HeavyItalic.ttf"; sourceTree = "<group>"; };
+		2EBCF98B29AB41CC003F6A1B /* SFProText-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Semibold.ttf"; sourceTree = "<group>"; };
+		2EBCF98C29AB41CC003F6A1B /* SFProText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Bold.ttf"; sourceTree = "<group>"; };
+		2EBCF98D29AB41CC003F6A1B /* SFProText-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-BoldItalic.ttf"; sourceTree = "<group>"; };
+		2EBCF98E29AB41CC003F6A1B /* SFProText-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-RegularItalic.ttf"; sourceTree = "<group>"; };
+		2EBCF98F29AB41CC003F6A1B /* SFProText-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-MediumItalic.ttf"; sourceTree = "<group>"; };
+		2EBCF99029AB41CC003F6A1B /* SFProText-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-LightItalic.ttf"; sourceTree = "<group>"; };
+		2EBCF99129AB41CC003F6A1B /* SFProText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Medium.ttf"; sourceTree = "<group>"; };
+		2EBCF99229AB41CC003F6A1B /* SFProText-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		2EBCF99329AB41CD003F6A1B /* SFProText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Regular.ttf"; sourceTree = "<group>"; };
+		2EBCF99429AB41CD003F6A1B /* SFProText-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Heavy.ttf"; sourceTree = "<group>"; };
+		2EBCF99529AB41CD003F6A1B /* SFProText-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Light.ttf"; sourceTree = "<group>"; };
+		2EBCF9A229AB4250003F6A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2EBCF9A329AB5146003F6A1B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		2EBCF9A529AB8D38003F6A1B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +88,16 @@
 		2EBCF97929AB4193003F6A1B /* OrynTap */ = {
 			isa = PBXGroup;
 			children = (
+				2EBCF9A229AB4250003F6A1B /* Info.plist */,
+				2EBCF98829AB419A003F6A1B /* Resources */,
 				2EBCF97A29AB4193003F6A1B /* OrynTapApp.swift */,
-				2EBCF97C29AB4193003F6A1B /* ContentView.swift */,
-				2EBCF97E29AB4194003F6A1B /* Assets.xcassets */,
+				2EBCF97C29AB4193003F6A1B /* WelcomeView.swift */,
+				2EBCF9A329AB5146003F6A1B /* OnboardingView.swift */,
+				2EBCF9A529AB8D38003F6A1B /* LoginView.swift */,
+				2E07D72029AF4A9200CB3EFD /* SignUpView.swift */,
+				2E07D72229AF525300CB3EFD /* CodeVerificationView.swift */,
+				2E07D72429AF56FD00CB3EFD /* ChooseAccountTypeView.swift */,
+				2E07D72629AF5E8B00CB3EFD /* SetUpProfileVuew.swift */,
 				2EBCF98029AB4194003F6A1B /* Preview Content */,
 			);
 			path = OrynTap;
@@ -65,6 +109,34 @@
 				2EBCF98129AB4194003F6A1B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2EBCF98829AB419A003F6A1B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2EBCF98929AB41A9003F6A1B /* Fonts */,
+				2EBCF97E29AB4194003F6A1B /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2EBCF98929AB41A9003F6A1B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2EBCF98C29AB41CC003F6A1B /* SFProText-Bold.ttf */,
+				2EBCF98D29AB41CC003F6A1B /* SFProText-BoldItalic.ttf */,
+				2EBCF99429AB41CD003F6A1B /* SFProText-Heavy.ttf */,
+				2EBCF98A29AB41CC003F6A1B /* SFProText-HeavyItalic.ttf */,
+				2EBCF99529AB41CD003F6A1B /* SFProText-Light.ttf */,
+				2EBCF99029AB41CC003F6A1B /* SFProText-LightItalic.ttf */,
+				2EBCF99129AB41CC003F6A1B /* SFProText-Medium.ttf */,
+				2EBCF98F29AB41CC003F6A1B /* SFProText-MediumItalic.ttf */,
+				2EBCF99329AB41CD003F6A1B /* SFProText-Regular.ttf */,
+				2EBCF98E29AB41CC003F6A1B /* SFProText-RegularItalic.ttf */,
+				2EBCF98B29AB41CC003F6A1B /* SFProText-Semibold.ttf */,
+				2EBCF99229AB41CC003F6A1B /* SFProText-SemiboldItalic.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +198,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EBCF98229AB4194003F6A1B /* Preview Assets.xcassets in Resources */,
+				2EBCF99B29AB41CD003F6A1B /* SFProText-MediumItalic.ttf in Resources */,
+				2EBCF99C29AB41CD003F6A1B /* SFProText-LightItalic.ttf in Resources */,
+				2EBCF9A029AB41CD003F6A1B /* SFProText-Heavy.ttf in Resources */,
+				2EBCF99929AB41CD003F6A1B /* SFProText-BoldItalic.ttf in Resources */,
+				2EBCF99A29AB41CD003F6A1B /* SFProText-RegularItalic.ttf in Resources */,
+				2EBCF99729AB41CD003F6A1B /* SFProText-Semibold.ttf in Resources */,
+				2EBCF99829AB41CD003F6A1B /* SFProText-Bold.ttf in Resources */,
+				2EBCF99F29AB41CD003F6A1B /* SFProText-Regular.ttf in Resources */,
+				2EBCF99E29AB41CD003F6A1B /* SFProText-SemiboldItalic.ttf in Resources */,
+				2EBCF99629AB41CD003F6A1B /* SFProText-HeavyItalic.ttf in Resources */,
+				2EBCF9A129AB41CD003F6A1B /* SFProText-Light.ttf in Resources */,
 				2EBCF97F29AB4194003F6A1B /* Assets.xcassets in Resources */,
+				2EBCF99D29AB41CD003F6A1B /* SFProText-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +221,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EBCF97D29AB4193003F6A1B /* ContentView.swift in Sources */,
+				2E07D72329AF525300CB3EFD /* CodeVerificationView.swift in Sources */,
+				2EBCF9A429AB5146003F6A1B /* OnboardingView.swift in Sources */,
+				2E07D72729AF5E8B00CB3EFD /* SetUpProfileVuew.swift in Sources */,
+				2E07D72129AF4A9200CB3EFD /* SignUpView.swift in Sources */,
+				2E07D72529AF56FD00CB3EFD /* ChooseAccountTypeView.swift in Sources */,
+				2EBCF97D29AB4193003F6A1B /* WelcomeView.swift in Sources */,
+				2EBCF9A629AB8D38003F6A1B /* LoginView.swift in Sources */,
 				2EBCF97B29AB4193003F6A1B /* OrynTapApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +360,7 @@
 				DEVELOPMENT_TEAM = 45GSN6WVR8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OrynTap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +390,7 @@
 				DEVELOPMENT_TEAM = 45GSN6WVR8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OrynTap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

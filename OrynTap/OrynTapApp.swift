@@ -1,9 +1,3 @@
-//
-//  OrynTapApp.swift
-//  OrynTap
-//
-//  Created by Zhanagul on 26.02.2023.
-//
 
 import SwiftUI
 
@@ -11,7 +5,7 @@ import SwiftUI
 struct OrynTapApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView()
         }
     }
 }
