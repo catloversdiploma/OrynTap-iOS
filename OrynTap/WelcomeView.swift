@@ -8,7 +8,6 @@ struct WelcomeView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 100) {
-//                Rectangle().fill(Gradient(colors: [.indigo, .purple])).ignoresSafeArea()
                 Text("Welcome to OrynTap!").font(Font.custom("SFProText-Bold", size: 24))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)

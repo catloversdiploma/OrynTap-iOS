@@ -3,28 +3,31 @@ import SwiftUI
 
 struct ChooseAccountTypeView: View {
     var body: some View {
-        ZStack(alignment: .leading) {
-            Color("backgroundColor").ignoresSafeArea()
-            Text("Choose your").font(Font.custom("SFProText-Bold", size: 34))
-                .foregroundColor(.black)
-                .multilineTextAlignment(.leading)
-                .padding(EdgeInsets(top: 100, leading: 32, bottom: 700, trailing: 25))
-            Text("account type").font(Font.custom("SFProText-Bold", size: 34))
-                .foregroundColor(.black)
-                .multilineTextAlignment(.leading)
-                .padding(EdgeInsets(top: 100, leading: 32, bottom: 600, trailing: 32))
-            Text("Choose the type of your account. Be careful,  to change it is impossible!")
-                .font(Font.custom("SFProText-Semibold", size: 15))
-                .foregroundColor(.gray)
-                .multilineTextAlignment(.leading)
-                .padding(EdgeInsets(top: 200, leading: 32, bottom: 585, trailing: 32))
-            Group {
+        VStack(alignment: .leading, spacing: 42) {
+            VStack(alignment: .leading, spacing: 10){
+                Text("Choose your").font(Font.custom("SFProText-Bold", size: 34))
+                    .foregroundColor(Color("mainColor"))
+                    .multilineTextAlignment(.leading)
+                    .padding(.leading, 25)
+                    .padding(.top, 96)
+                Text("account type").font(Font.custom("SFProText-Bold", size: 34))
+                    .foregroundColor(Color("mainColor"))
+                    .multilineTextAlignment(.leading)
+                    .padding(.leading, 25)
+                Text("Choose the type of your account. Be careful,  to change it is impossible!")
+                    .font(Font.custom("SFProText-Semibold", size: 15))
+                    .foregroundColor(.gray)
+                    .multilineTextAlignment(.leading)
+                    .padding(.leading, 25)
+            }
+            
+            VStack(alignment: .leading, spacing: 22) {
                 Button(action: {
                     
                 }) {
                     Text("I am a customer")
                         .font(Font.custom("SFProText-Semibold", size: 24))
-                        .frame(width: 341, height: 172, alignment: .leading)
+                        .frame(width: 300, height: 136, alignment: .leading)
                         .foregroundColor(.black)
                 }
                 .tint(Color("backgroundColor"))
@@ -33,16 +36,17 @@ struct ChooseAccountTypeView: View {
                 )
                 .buttonStyle (.borderedProminent)
                 .controlSize (.large)
-                .padding(EdgeInsets(top: 140, leading: 25, bottom: 200, trailing: 25))
-            }
+                .padding(.leading, 25)
+                .padding(.trailing, 25)
+               
             
-            Group {
+            
                 Button(action: {
                     
                 }) {
                     Text("I am a Venue Owner")
                         .font(Font.custom("SFProText-Semibold", size: 24))
-                        .frame(width: 341, height: 172, alignment: .leading)
+                        .frame(width: 300, height: 136, alignment: .leading)
                         .foregroundColor(.black)
                 }
                 .tint(Color("backgroundColor"))
@@ -51,23 +55,18 @@ struct ChooseAccountTypeView: View {
                 )
                 .buttonStyle (.borderedProminent)
                 .controlSize (.large)
-                .padding(EdgeInsets(top: 580, leading: 25, bottom: 200, trailing: 25))
+                .padding(.leading, 25)
+                .padding(.trailing, 25)
             }
-            
-            Button(action: {
-               
-            }) {
-                Text("Confirm")
-                    .font(Font.custom("SFProText-Semibold", size: 16))
-                    .frame(width: 300)
-                    .foregroundColor(.white)
-            }
-            .tint(Color("mainColor"))
-            .buttonStyle (.borderedProminent)
-            .buttonBorderShape (.capsule)
-            .controlSize (.large)
-            .padding(EdgeInsets(top: 750, leading: 40, bottom: 80, trailing: 25))
-        }
+                
+        }.frame(
+            minWidth: 0,
+            maxWidth: .infinity,
+            minHeight: 0,
+            maxHeight: .infinity,
+            alignment: .topLeading
+          )
+          .background(Color("backgroundColor"))
     }
 }
 

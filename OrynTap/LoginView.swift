@@ -10,59 +10,49 @@ struct LoginView: View {
     @State private var showSignUpView: Bool = false
     
     var body: some View {
-        NavigationView {
-            ZStack(alignment: .leading) {
-                Color("mainColor").ignoresSafeArea()
-                Circle()
-                    .scale(1.9)
-                    .foregroundColor(.white.opacity(0.29))
-                Circle()
-                    .scale(1.7)
-                    .foregroundColor(Color("backgroundColor"))
-                Group {
+            VStack(alignment: .leading, spacing: 40) {
+                
+                VStack(alignment: .leading, spacing: 10) {
                     Text("Welcome to").font(Font.custom("SFProText-Bold", size: 34))
-                        .foregroundColor(.black)
+                        .foregroundColor(Color("mainColor"))
                         .multilineTextAlignment(.leading)
-                        .padding(EdgeInsets(top: 150, leading: 32, bottom: 700, trailing: 25))
+                        .padding(.leading, 32)
+                        .padding(.top, 96)
                     Text("OrynTap!").font(Font.custom("SFProText-Bold", size: 34))
-                        .foregroundColor(.black)
+                        .foregroundColor(Color("mainColor"))
                         .multilineTextAlignment(.leading)
-                        .padding(EdgeInsets(top: 135, leading: 32, bottom: 600, trailing: 32))
-                    
+                        .padding(.leading, 32)
+                }
+                
+                VStack(alignment: .leading, spacing: 10) {
                     TextField("Phone number", text: $username)
                         .font(Font.custom("SFProText-Semibold", size: 16))
                         .padding()
                         .frame(height: 55)
                         .overlay(RoundedRectangle(cornerRadius: 25.0).strokeBorder(Color(.lightGray), style: StrokeStyle(lineWidth: 1.0)))
-                        .padding(EdgeInsets(top: 280, leading: 32, bottom: 550, trailing: 32))
-                    Image(systemName: "phone")
-                        .foregroundColor(.gray)
-                        .padding(EdgeInsets(top: 280, leading: 320, bottom: 550, trailing: 32))
-                        .frame(width: 30, height: 30, alignment: .leading)
-                    
+                        .padding(.leading, 25)
+                        .padding(.trailing, 25)
                     SecureField("Password", text: $password)
                         .font(Font.custom("SFProText-Semibold", size: 16))
                         .padding()
                         .frame(height: 55)
                         .overlay(RoundedRectangle(cornerRadius: 25.0).strokeBorder(Color(.lightGray), style: StrokeStyle(lineWidth: 1.0)))
-                        .padding(EdgeInsets(top: 300, leading: 32, bottom: 400, trailing: 32))
-                    Image(systemName: "lock")
-                        .foregroundColor(.gray)
-                        .padding(EdgeInsets(top: 300, leading: 325, bottom: 400, trailing: 32))
-                        .frame(width: 30, height: 30, alignment: .leading)
-                }
-                
-                Group {
-                Button(action: {
+                        .padding(.leading, 25)
+                        .padding(.trailing, 25)
                     
-                }) {
-                    Text("Forgot password?")
-                        .font(Font.custom("SFProText-Semibold", size: 15))
-                        .foregroundColor(Color("mainColor"))
-                        .padding(EdgeInsets(top: 380, leading: 224, bottom: 380, trailing: 32))
-                        .frame(height: 40)
+                    
+                        Button(action: {
+                            
+                        }) {
+                            Text("Forgot password?")
+                                .font(Font.custom("SFProText-Semibold", size: 15))
+                                .foregroundColor(Color("mainColor"))
+                                .frame(height: 40)
+                                .padding(.leading, 232)
+                        }
                 }
-                
+                    
+                VStack(alignment: .leading, spacing: 10) {
                     Button(action: {
                         
                     }) {
@@ -75,7 +65,8 @@ struct LoginView: View {
                     .buttonStyle (.borderedProminent)
                     .buttonBorderShape (.capsule)
                     .controlSize (.large)
-                    .padding(EdgeInsets(top: 400, leading: 25, bottom: 200, trailing: 25))
+                    .padding(.leading, 25)
+                    .padding(.trailing, 25)
                 
                     Button(action: {
                         
@@ -83,28 +74,37 @@ struct LoginView: View {
                         Text("Don't have an account?")
                             .font(Font.custom("SFProText-Semibold", size: 16))
                             .foregroundColor(Color("mainColor"))
-                            .padding(EdgeInsets(top: 500, leading: 100, bottom: 150, trailing: 100))
                             .frame(height:40)
+                            .padding(.leading, 184)
                     }
-                    
-                        Button(action: {
-                            showSignUpView = true
-                        }) {
-                            Text("Sign up")
-                                .font(Font.custom("SFProText-Semibold", size: 16))
-                                .frame(width: 300)
-                                .foregroundColor(Color("mainColor"))
-                        }
-                        .tint(Color("backgroundColor"))
-                        .controlSize(.large)
-                        .buttonStyle(.borderedProminent)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 25).stroke(Color("mainColor"), lineWidth: 1)
-                        )
-                        .padding(EdgeInsets(top: 600, leading: 25, bottom: 100, trailing: 25))
+                
                 }
-            }
-        }.navigationBarHidden(true)
+                
+                Button(action: {
+                    showSignUpView = true
+                }) {
+                    Text("Sign up")
+                        .font(Font.custom("SFProText-Semibold", size: 16))
+                        .frame(width: 300)
+                        .foregroundColor(Color("mainColor"))
+                }
+                .tint(Color("backgroundColor"))
+                .controlSize(.large)
+                .buttonStyle(.borderedProminent)
+                .buttonBorderShape(.capsule)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 25).stroke(Color("mainColor"), lineWidth: 1)
+                )
+                .padding(.leading, 25)
+                .padding(.trailing, 25)
+            }.frame(
+                minWidth: 0,
+                maxWidth: .infinity,
+                minHeight: 0,
+                maxHeight: .infinity,
+                alignment: .topLeading
+              )
+              .background(Color("backgroundColor"))
     }
 }
 
