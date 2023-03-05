@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2E07D72129AF4A9200CB3EFD /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E07D72029AF4A9200CB3EFD /* SignUpView.swift */; };
+		2E07D72129AF4A9200CB3EFD /* SendMeCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E07D72029AF4A9200CB3EFD /* SendMeCodeView.swift */; };
 		2E07D72329AF525300CB3EFD /* CodeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E07D72229AF525300CB3EFD /* CodeVerificationView.swift */; };
 		2E07D72529AF56FD00CB3EFD /* ChooseAccountTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E07D72429AF56FD00CB3EFD /* ChooseAccountTypeView.swift */; };
 		2E07D72729AF5E8B00CB3EFD /* SetUpProfileVuew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E07D72629AF5E8B00CB3EFD /* SetUpProfileVuew.swift */; };
+		2E10D86029B4B12400FEC10D /* NewPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E10D85F29B4B12400FEC10D /* NewPasswordView.swift */; };
 		2EBCF97B29AB4193003F6A1B /* OrynTapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCF97A29AB4193003F6A1B /* OrynTapApp.swift */; };
 		2EBCF97D29AB4193003F6A1B /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCF97C29AB4193003F6A1B /* WelcomeView.swift */; };
 		2EBCF97F29AB4194003F6A1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EBCF97E29AB4194003F6A1B /* Assets.xcassets */; };
@@ -32,10 +33,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2E07D72029AF4A9200CB3EFD /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		2E07D72029AF4A9200CB3EFD /* SendMeCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMeCodeView.swift; sourceTree = "<group>"; };
 		2E07D72229AF525300CB3EFD /* CodeVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerificationView.swift; sourceTree = "<group>"; };
 		2E07D72429AF56FD00CB3EFD /* ChooseAccountTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAccountTypeView.swift; sourceTree = "<group>"; };
 		2E07D72629AF5E8B00CB3EFD /* SetUpProfileVuew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpProfileVuew.swift; sourceTree = "<group>"; };
+		2E10D85F29B4B12400FEC10D /* NewPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordView.swift; sourceTree = "<group>"; };
 		2EBCF97729AB4193003F6A1B /* OrynTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrynTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EBCF97A29AB4193003F6A1B /* OrynTapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrynTapApp.swift; sourceTree = "<group>"; };
 		2EBCF97C29AB4193003F6A1B /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,58 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E10D85929B4AA6600FEC10D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2E10D85C29B4AB1500FEC10D /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2E10D85A29B4AA6D00FEC10D /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				2E10D85B29B4AAF500FEC10D /* View */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		2E10D85B29B4AAF500FEC10D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E07D72429AF56FD00CB3EFD /* ChooseAccountTypeView.swift */,
+				2E07D72629AF5E8B00CB3EFD /* SetUpProfileVuew.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2E10D85C29B4AB1500FEC10D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2EBCF9A529AB8D38003F6A1B /* LoginView.swift */,
+				2E10D85F29B4B12400FEC10D /* NewPasswordView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2E10D85D29B4AB3A00FEC10D /* WelcomeView */ = {
+			isa = PBXGroup;
+			children = (
+				2EBCF97C29AB4193003F6A1B /* WelcomeView.swift */,
+				2EBCF9A329AB5146003F6A1B /* OnboardingView.swift */,
+			);
+			path = WelcomeView;
+			sourceTree = "<group>";
+		};
+		2E10D85E29B4AE3F00FEC10D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2E07D72029AF4A9200CB3EFD /* SendMeCodeView.swift */,
+				2E07D72229AF525300CB3EFD /* CodeVerificationView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		2EBCF96E29AB4193003F6A1B = {
 			isa = PBXGroup;
 			children = (
@@ -88,17 +142,14 @@
 		2EBCF97929AB4193003F6A1B /* OrynTap */ = {
 			isa = PBXGroup;
 			children = (
+				2E10D85E29B4AE3F00FEC10D /* Common */,
+				2EBCF97A29AB4193003F6A1B /* OrynTapApp.swift */,
 				2EBCF9A229AB4250003F6A1B /* Info.plist */,
 				2EBCF98829AB419A003F6A1B /* Resources */,
-				2EBCF97A29AB4193003F6A1B /* OrynTapApp.swift */,
-				2EBCF97C29AB4193003F6A1B /* WelcomeView.swift */,
-				2EBCF9A329AB5146003F6A1B /* OnboardingView.swift */,
-				2EBCF9A529AB8D38003F6A1B /* LoginView.swift */,
-				2E07D72029AF4A9200CB3EFD /* SignUpView.swift */,
-				2E07D72229AF525300CB3EFD /* CodeVerificationView.swift */,
-				2E07D72429AF56FD00CB3EFD /* ChooseAccountTypeView.swift */,
-				2E07D72629AF5E8B00CB3EFD /* SetUpProfileVuew.swift */,
 				2EBCF98029AB4194003F6A1B /* Preview Content */,
+				2E10D85D29B4AB3A00FEC10D /* WelcomeView */,
+				2E10D85929B4AA6600FEC10D /* Login */,
+				2E10D85A29B4AA6D00FEC10D /* Registration */,
 			);
 			path = OrynTap;
 			sourceTree = "<group>";
@@ -221,10 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E10D86029B4B12400FEC10D /* NewPasswordView.swift in Sources */,
 				2E07D72329AF525300CB3EFD /* CodeVerificationView.swift in Sources */,
 				2EBCF9A429AB5146003F6A1B /* OnboardingView.swift in Sources */,
 				2E07D72729AF5E8B00CB3EFD /* SetUpProfileVuew.swift in Sources */,
-				2E07D72129AF4A9200CB3EFD /* SignUpView.swift in Sources */,
+				2E07D72129AF4A9200CB3EFD /* SendMeCodeView.swift in Sources */,
 				2E07D72529AF56FD00CB3EFD /* ChooseAccountTypeView.swift in Sources */,
 				2EBCF97D29AB4193003F6A1B /* WelcomeView.swift in Sources */,
 				2EBCF9A629AB8D38003F6A1B /* LoginView.swift in Sources */,

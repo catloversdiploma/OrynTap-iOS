@@ -86,15 +86,16 @@ struct SetUpProfileVuew: View {
             }) {
                 Text("Continue")
                     .font(Font.custom("SFProText-Semibold", size: 16))
-                    .frame(width: 316)
-                    .frame(height: 55)
+                    .frame(width: 320)
+                    .frame(height: 30)
                     .foregroundColor(.white)
             }
             .tint(Color("mainColor"))
             .buttonStyle (.borderedProminent)
             .buttonBorderShape (.capsule)
-            .padding(.leading, 25)
-            .padding(.trailing, 25)
+            .controlSize(.large)
+            .padding(.leading, 20)
+            .padding(.trailing, 20)
             
         }.frame(
             minWidth: 0,
