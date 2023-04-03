@@ -1,9 +1,11 @@
 
 
 import SwiftUI
+import iPhoneNumberField
 
 struct LoginView: View {
-    @State private var username: String = ""
+    @State var loginData = LoginViewModel()
+    @State var isEditing: Bool = false
     @State private var password: String = ""
     @State private var wrongUsername: Float = 0
     @State private var wrongPassword: Float = 0
@@ -25,7 +27,7 @@ struct LoginView: View {
                 }
                 
                 VStack(alignment: .leading, spacing: 10) {
-                    TextField("Phone number", text: $username)
+                    iPhoneNumberField("Phone number", text: loginData.$phoneNumber, isEditing: $isEditing)
                         .font(Font.custom("SFProText-Semibold", size: 16))
                         .padding()
                         .frame(height: 55)
