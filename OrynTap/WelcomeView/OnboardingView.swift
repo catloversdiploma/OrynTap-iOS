@@ -57,7 +57,6 @@ struct WalkthroughScreen: View {
                     .background(Color.white)
                     .clipShape(Circle())
                 
-                // Circular slider
                 
                     .overlay(
                     
@@ -154,7 +153,6 @@ struct ScreensView: View {
                 .kerning(1.3)
                 .padding(EdgeInsets(top: 4, leading: 16, bottom: 4, trailing: 16))
             
-            //Minimum spacing When Phone is reducing
             Spacer(minLength: 120)
             
         }
@@ -162,5 +160,4 @@ struct ScreensView: View {
     }
 }
 
-// total pages
 var totalPages = 3

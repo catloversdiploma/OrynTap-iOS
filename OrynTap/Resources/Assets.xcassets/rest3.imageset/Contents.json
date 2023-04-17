@@ -1,15 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "image_2023-04-16_13-05-26.png",
+      "filename" : "rest3.jpeg",
       "idiom" : "universal"
     }
   ],
   "info" : {
     "author" : "xcode",
     "version" : 1
-  },
-  "properties" : {
-    "preserves-vector-representation" : true
   }
 }

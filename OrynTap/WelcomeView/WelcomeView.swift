@@ -20,6 +20,7 @@ struct WelcomeView: View {
                     .multilineTextAlignment(.leading)
                     .padding(.leading, 25)
                     .padding(.trailing, 25)
+                
                 NavigationLink(destination: OnboardingView().navigationBarBackButtonHidden(true), isActive: $goesToOnboarding)
                 {
                     Button(action: {
