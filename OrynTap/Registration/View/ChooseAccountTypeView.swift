@@ -2,6 +2,10 @@
 import SwiftUI
 
 struct ChooseAccountTypeView: View {
+    @StateObject private var viewModel = RegistrationViewModel()
+    @State private var goesToSetupProfile: Bool = false
+    @State private var goesToVenueRegistrationPage: Bool = false
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 42) {
             VStack(alignment: .leading, spacing: 10){
@@ -22,41 +26,45 @@ struct ChooseAccountTypeView: View {
             }
             
             VStack(alignment: .leading, spacing: 22) {
-                Button(action: {
+                NavigationLink(destination: SetUpProfileView(), isActive: $goesToSetupProfile)
+                {
+                    Button(action: {
+                        goesToSetupProfile = true
+                    }) {
+                        Text("I am a customer")
+                            .font(Font.custom("SFProText-Semibold", size: 24))
+                            .frame(width: 300, height: 136, alignment: .leading)
+                            .foregroundColor(.black)
+                    }
+                    .tint(Color("backgroundColor"))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 25.0).strokeBorder(Color("mainColor"), style: StrokeStyle(lineWidth: 1.0))
+                    )
+                    .buttonStyle (.borderedProminent)
+                    .controlSize (.large)
+                    .padding(.leading, 25)
+                    .padding(.trailing, 25)
                     
-                }) {
-                    Text("I am a customer")
-                        .font(Font.custom("SFProText-Semibold", size: 24))
-                        .frame(width: 300, height: 136, alignment: .leading)
-                        .foregroundColor(.black)
                 }
-                .tint(Color("backgroundColor"))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 25.0).strokeBorder(Color("mainColor"), style: StrokeStyle(lineWidth: 1.0))
-                )
-                .buttonStyle (.borderedProminent)
-                .controlSize (.large)
-                .padding(.leading, 25)
-                .padding(.trailing, 25)
-               
-            
-            
-                Button(action: {
-                    
-                }) {
-                    Text("I am a Venue Owner")
-                        .font(Font.custom("SFProText-Semibold", size: 24))
-                        .frame(width: 300, height: 136, alignment: .leading)
-                        .foregroundColor(.black)
+                NavigationLink(destination: VenueRegistrationView(), isActive: $goesToVenueRegistrationPage)
+                {
+                    Button(action: {
+                        goesToVenueRegistrationPage = true
+                    }) {
+                        Text("I am a Venue Owner")
+                            .font(Font.custom("SFProText-Semibold", size: 24))
+                            .frame(width: 300, height: 136, alignment: .leading)
+                            .foregroundColor(.black)
+                    }
+                    .tint(Color("backgroundColor"))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 25.0).strokeBorder(Color("mainColor"), style: StrokeStyle(lineWidth: 1.0))
+                    )
+                    .buttonStyle (.borderedProminent)
+                    .controlSize (.large)
+                    .padding(.leading, 25)
+                    .padding(.trailing, 25)
                 }
-                .tint(Color("backgroundColor"))
-                .overlay(
-                    RoundedRectangle(cornerRadius: 25.0).strokeBorder(Color("mainColor"), style: StrokeStyle(lineWidth: 1.0))
-                )
-                .buttonStyle (.borderedProminent)
-                .controlSize (.large)
-                .padding(.leading, 25)
-                .padding(.trailing, 25)
             }
                 
         }.frame(

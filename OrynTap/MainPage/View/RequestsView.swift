@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RequestsView: View {
+    @State var segmentedChoice = 0
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
@@ -16,6 +17,11 @@ struct RequestsView: View {
                     .multilineTextAlignment(.leading)
             }.padding(.horizontal)
                 .padding(.vertical, 15)
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                CustomSegmentedPicker(selection: segmentedChoice, titles: ["Sent", "Accepted", "Declined", "Booked", "Finished"], selectedItemColor: Color("mainColor"), backgroundColor: Color("color1"), selectedItemFontColor: .white, defaultItemFontColor: .black)
+            }
+            
             
             
             

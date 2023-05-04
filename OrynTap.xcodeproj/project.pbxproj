@@ -10,7 +10,7 @@
 		2E07D72129AF4A9200CB3EFD /* SendMeCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E07D72029AF4A9200CB3EFD /* SendMeCodeView.swift */; };
 		2E07D72329AF525300CB3EFD /* CodeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E07D72229AF525300CB3EFD /* CodeVerificationView.swift */; };
 		2E07D72529AF56FD00CB3EFD /* ChooseAccountTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E07D72429AF56FD00CB3EFD /* ChooseAccountTypeView.swift */; };
-		2E07D72729AF5E8B00CB3EFD /* SetUpProfileVuew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E07D72629AF5E8B00CB3EFD /* SetUpProfileVuew.swift */; };
+		2E07D72729AF5E8B00CB3EFD /* SetUpProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E07D72629AF5E8B00CB3EFD /* SetUpProfileView.swift */; };
 		2E10D86029B4B12400FEC10D /* NewPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E10D85F29B4B12400FEC10D /* NewPasswordView.swift */; };
 		2E222F7D29C5AAF50016B5E6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E222F7C29C5AAF50016B5E6 /* LoginViewModel.swift */; };
 		2E222F8629C5E3B30016B5E6 /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = 2E222F8529C5E3B30016B5E6 /* iPhoneNumberField */; };
@@ -34,20 +34,38 @@
 		2EBCF9A129AB41CD003F6A1B /* SFProText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2EBCF99529AB41CD003F6A1B /* SFProText-Light.ttf */; };
 		2EBCF9A429AB5146003F6A1B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCF9A329AB5146003F6A1B /* OnboardingView.swift */; };
 		2EBCF9A629AB8D38003F6A1B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EBCF9A529AB8D38003F6A1B /* LoginView.swift */; };
-		7453C3D629DFBF2600A7B3D1 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7453C3D529DFBF2600A7B3D1 /* LoginService.swift */; };
+		6768628BBCB67F47BC01B5F6 /* Pods_OrynTap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5730A333BBCD56BEEFEF17CF /* Pods_OrynTap.framework */; };
+		743CF3FB29F8C18B00931A06 /* ChangePasswordInSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743CF3FA29F8C18B00931A06 /* ChangePasswordInSettings.swift */; };
+		743CF3FD29F8C1A200931A06 /* ManageProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743CF3FC29F8C1A200931A06 /* ManageProfile.swift */; };
+		743CF3FF29F8C1BA00931A06 /* HelpAndFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743CF3FE29F8C1BA00931A06 /* HelpAndFeedback.swift */; };
+		743CF40129F8C1EB00931A06 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743CF40029F8C1EB00931A06 /* Settings.swift */; };
+		743CF40529F8C59100931A06 /* CustomSegmentedPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743CF40429F8C59100931A06 /* CustomSegmentedPicker.swift */; };
+		743CF41229F94ACC00931A06 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 743CF41129F94ACC00931A06 /* SwiftProtobuf */; };
+		743CF41429F94ACC00931A06 /* SwiftProtobufPluginLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 743CF41329F94ACC00931A06 /* SwiftProtobufPluginLibrary */; };
+		743CF41629F94ACC00931A06 /* protoc-gen-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 743CF41529F94ACC00931A06 /* protoc-gen-swift */; };
+		743CF41829F9573100931A06 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743CF41729F9573100931A06 /* APIError.swift */; };
 		7453C3D829DFC0C300A7B3D1 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7453C3D729DFC0C300A7B3D1 /* LoginModel.swift */; };
 		746039A929ED48730021AE1E /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746039A829ED48730021AE1E /* DetailsView.swift */; };
 		746039AB29ED6A800021AE1E /* VenueRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746039AA29ED6A800021AE1E /* VenueRegistrationView.swift */; };
-		74618C2D29EBF34F00A9684B /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74618C2C29EBF34F00A9684B /* TabBarView.swift */; };
+		746039B129EE575E0021AE1E /* VenueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746039B029EE575E0021AE1E /* VenueItem.swift */; };
+		746039B729EF995C0021AE1E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746039B629EF995C0021AE1E /* TabBarView.swift */; };
 		74618C2F29EBF3DA00A9684B /* RequestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74618C2E29EBF3DA00A9684B /* RequestsView.swift */; };
 		74618C3129EBF3E500A9684B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74618C3029EBF3E500A9684B /* ProfileView.swift */; };
+		74D51F4329FE38C70057763F /* RegistrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D51F4229FE38C70057763F /* RegistrationModel.swift */; };
+		74D51F4529FE38E20057763F /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D51F4429FE38E20057763F /* RegistrationViewModel.swift */; };
+		74FB6F842A03693D0092FA2B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB6F832A03693D0092FA2B /* CustomTextField.swift */; };
+		74FB6F872A03697D0092FA2B /* TextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB6F862A03697D0092FA2B /* TextFieldStyle.swift */; };
+		74FB6F8A2A0369A80092FA2B /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB6F892A0369A80092FA2B /* Regex.swift */; };
+		74FB6F8F2A036A080092FA2B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB6F8E2A036A080092FA2B /* String.swift */; };
+		74FB6F932A03C0A90092FA2B /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB6F922A03C0A90092FA2B /* FilterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		070288569849A2F8A91D98A1 /* Pods-OrynTap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrynTap.release.xcconfig"; path = "Target Support Files/Pods-OrynTap/Pods-OrynTap.release.xcconfig"; sourceTree = "<group>"; };
 		2E07D72029AF4A9200CB3EFD /* SendMeCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMeCodeView.swift; sourceTree = "<group>"; };
 		2E07D72229AF525300CB3EFD /* CodeVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerificationView.swift; sourceTree = "<group>"; };
 		2E07D72429AF56FD00CB3EFD /* ChooseAccountTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAccountTypeView.swift; sourceTree = "<group>"; };
-		2E07D72629AF5E8B00CB3EFD /* SetUpProfileVuew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpProfileVuew.swift; sourceTree = "<group>"; };
+		2E07D72629AF5E8B00CB3EFD /* SetUpProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpProfileView.swift; sourceTree = "<group>"; };
 		2E10D85F29B4B12400FEC10D /* NewPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordView.swift; sourceTree = "<group>"; };
 		2E222F7C29C5AAF50016B5E6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		2E2784CB29D96B75004ED35D /* FavouritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesView.swift; sourceTree = "<group>"; };
@@ -72,13 +90,28 @@
 		2EBCF9A229AB4250003F6A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2EBCF9A329AB5146003F6A1B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		2EBCF9A529AB8D38003F6A1B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		7453C3D529DFBF2600A7B3D1 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		2F8E7AFB97FD4621F133796D /* Pods-OrynTap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OrynTap.debug.xcconfig"; path = "Target Support Files/Pods-OrynTap/Pods-OrynTap.debug.xcconfig"; sourceTree = "<group>"; };
+		5730A333BBCD56BEEFEF17CF /* Pods_OrynTap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OrynTap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		743CF3FA29F8C18B00931A06 /* ChangePasswordInSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordInSettings.swift; sourceTree = "<group>"; };
+		743CF3FC29F8C1A200931A06 /* ManageProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageProfile.swift; sourceTree = "<group>"; };
+		743CF3FE29F8C1BA00931A06 /* HelpAndFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpAndFeedback.swift; sourceTree = "<group>"; };
+		743CF40029F8C1EB00931A06 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		743CF40429F8C59100931A06 /* CustomSegmentedPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedPicker.swift; sourceTree = "<group>"; };
+		743CF41729F9573100931A06 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		7453C3D729DFC0C300A7B3D1 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		746039A829ED48730021AE1E /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		746039AA29ED6A800021AE1E /* VenueRegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenueRegistrationView.swift; path = ../../../../Downloads/VenueRegistrationView.swift; sourceTree = "<group>"; };
-		74618C2C29EBF34F00A9684B /* TabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarView.swift; path = ../../../../../Desktop/TabBarView.swift; sourceTree = "<group>"; };
+		746039B029EE575E0021AE1E /* VenueItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueItem.swift; sourceTree = "<group>"; };
+		746039B629EF995C0021AE1E /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		74618C2E29EBF3DA00A9684B /* RequestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsView.swift; sourceTree = "<group>"; };
 		74618C3029EBF3E500A9684B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		74D51F4229FE38C70057763F /* RegistrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModel.swift; sourceTree = "<group>"; };
+		74D51F4429FE38E20057763F /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		74FB6F832A03693D0092FA2B /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		74FB6F862A03697D0092FA2B /* TextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyle.swift; sourceTree = "<group>"; };
+		74FB6F892A0369A80092FA2B /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
+		74FB6F8E2A036A080092FA2B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		74FB6F922A03C0A90092FA2B /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +119,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				743CF41629F94ACC00931A06 /* protoc-gen-swift in Frameworks */,
+				743CF41429F94ACC00931A06 /* SwiftProtobufPluginLibrary in Frameworks */,
 				2E222F8629C5E3B30016B5E6 /* iPhoneNumberField in Frameworks */,
+				6768628BBCB67F47BC01B5F6 /* Pods_OrynTap.framework in Frameworks */,
+				743CF41229F94ACC00931A06 /* SwiftProtobuf in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				74182E1129DE6B7D001FF682 /* Models */,
-				74182E0E29DE612D001FF682 /* Services */,
 				2E222F7B29C5AACD0016B5E6 /* ViewModel */,
 				2E10D85C29B4AB1500FEC10D /* View */,
 			);
@@ -107,6 +143,8 @@
 		2E10D85A29B4AA6D00FEC10D /* Registration */ = {
 			isa = PBXGroup;
 			children = (
+				74D51F4129FE38B50057763F /* Model */,
+				74D51F4029FE38AB0057763F /* ViewModel */,
 				746039AA29ED6A800021AE1E /* VenueRegistrationView.swift */,
 				2E10D85B29B4AAF500FEC10D /* View */,
 			);
@@ -117,7 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				2E07D72429AF56FD00CB3EFD /* ChooseAccountTypeView.swift */,
-				2E07D72629AF5E8B00CB3EFD /* SetUpProfileVuew.swift */,
+				2E07D72629AF5E8B00CB3EFD /* SetUpProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -142,9 +180,10 @@
 		2E10D85E29B4AE3F00FEC10D /* CommonUI */ = {
 			isa = PBXGroup;
 			children = (
-				2E10D85F29B4B12400FEC10D /* NewPasswordView.swift */,
-				2E07D72029AF4A9200CB3EFD /* SendMeCodeView.swift */,
-				2E07D72229AF525300CB3EFD /* CodeVerificationView.swift */,
+				74FB6F8D2A0369F90092FA2B /* Extensions */,
+				74FB6F8B2A0369D10092FA2B /* View */,
+				74FB6F882A03699E0092FA2B /* Enum */,
+				74FB6F852A0369670092FA2B /* Styles */,
 			);
 			path = CommonUI;
 			sourceTree = "<group>";
@@ -160,6 +199,8 @@
 		2E28311929D1EAA3009C23EC /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
+				746039AF29EE573C0021AE1E /* ViewModel */,
+				746039AE29EE57330021AE1E /* Model */,
 				2E707ADE29D2883900D47CB3 /* View */,
 			);
 			path = MainPage;
@@ -168,12 +209,18 @@
 		2E707ADE29D2883900D47CB3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				74618C2C29EBF34F00A9684B /* TabBarView.swift */,
+				746039B629EF995C0021AE1E /* TabBarView.swift */,
 				2E707AE129D289D700D47CB3 /* HomeView.swift */,
 				2E2784CB29D96B75004ED35D /* FavouritesView.swift */,
 				74618C2E29EBF3DA00A9684B /* RequestsView.swift */,
 				74618C3029EBF3E500A9684B /* ProfileView.swift */,
 				746039A829ED48730021AE1E /* DetailsView.swift */,
+				743CF3FA29F8C18B00931A06 /* ChangePasswordInSettings.swift */,
+				743CF3FC29F8C1A200931A06 /* ManageProfile.swift */,
+				743CF3FE29F8C1BA00931A06 /* HelpAndFeedback.swift */,
+				743CF40029F8C1EB00931A06 /* Settings.swift */,
+				743CF40429F8C59100931A06 /* CustomSegmentedPicker.swift */,
+				74FB6F922A03C0A90092FA2B /* FilterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,6 +230,8 @@
 			children = (
 				2EBCF97929AB4193003F6A1B /* OrynTap */,
 				2EBCF97829AB4193003F6A1B /* Products */,
+				BCB4BF940B15B0DA239A3309 /* Pods */,
+				D6FD83022944C1E209E327DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -246,20 +295,96 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
-		74182E0E29DE612D001FF682 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				7453C3D529DFBF2600A7B3D1 /* LoginService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
 		74182E1129DE6B7D001FF682 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				7453C3D729DFC0C300A7B3D1 /* LoginModel.swift */,
+				743CF41729F9573100931A06 /* APIError.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		746039AE29EE57330021AE1E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				746039B029EE575E0021AE1E /* VenueItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		746039AF29EE573C0021AE1E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		74D51F4029FE38AB0057763F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				74D51F4429FE38E20057763F /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		74D51F4129FE38B50057763F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74D51F4229FE38C70057763F /* RegistrationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		74FB6F852A0369670092FA2B /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				74FB6F862A03697D0092FA2B /* TextFieldStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		74FB6F882A03699E0092FA2B /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				74FB6F892A0369A80092FA2B /* Regex.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		74FB6F8B2A0369D10092FA2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2E07D72229AF525300CB3EFD /* CodeVerificationView.swift */,
+				2E07D72029AF4A9200CB3EFD /* SendMeCodeView.swift */,
+				2E10D85F29B4B12400FEC10D /* NewPasswordView.swift */,
+				74FB6F832A03693D0092FA2B /* CustomTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		74FB6F8D2A0369F90092FA2B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				74FB6F8E2A036A080092FA2B /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BCB4BF940B15B0DA239A3309 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F8E7AFB97FD4621F133796D /* Pods-OrynTap.debug.xcconfig */,
+				070288569849A2F8A91D98A1 /* Pods-OrynTap.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D6FD83022944C1E209E327DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5730A333BBCD56BEEFEF17CF /* Pods_OrynTap.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,9 +394,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2EBCF98529AB4194003F6A1B /* Build configuration list for PBXNativeTarget "OrynTap" */;
 			buildPhases = (
+				B3D4F3705025E49B0DBE1A56 /* [CP] Check Pods Manifest.lock */,
 				2EBCF97329AB4193003F6A1B /* Sources */,
 				2EBCF97429AB4193003F6A1B /* Frameworks */,
 				2EBCF97529AB4193003F6A1B /* Resources */,
+				02A5E8EBF4D4278502099C8A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -280,6 +407,9 @@
 			name = OrynTap;
 			packageProductDependencies = (
 				2E222F8529C5E3B30016B5E6 /* iPhoneNumberField */,
+				743CF41129F94ACC00931A06 /* SwiftProtobuf */,
+				743CF41329F94ACC00931A06 /* SwiftProtobufPluginLibrary */,
+				743CF41529F94ACC00931A06 /* protoc-gen-swift */,
 			);
 			productName = OrynTap;
 			productReference = 2EBCF97729AB4193003F6A1B /* OrynTap.app */;
@@ -311,6 +441,7 @@
 			mainGroup = 2EBCF96E29AB4193003F6A1B;
 			packageReferences = (
 				2E222F8429C5E3B30016B5E6 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */,
+				743CF41029F94ACC00931A06 /* XCRemoteSwiftPackageReference "swift-protobuf" */,
 			);
 			productRefGroup = 2EBCF97829AB4193003F6A1B /* Products */;
 			projectDirPath = "";
@@ -345,29 +476,84 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		02A5E8EBF4D4278502099C8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrynTap/Pods-OrynTap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OrynTap/Pods-OrynTap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OrynTap/Pods-OrynTap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3D4F3705025E49B0DBE1A56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OrynTap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2EBCF97329AB4193003F6A1B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74FB6F842A03693D0092FA2B /* CustomTextField.swift in Sources */,
 				2E10D86029B4B12400FEC10D /* NewPasswordView.swift in Sources */,
 				2E07D72329AF525300CB3EFD /* CodeVerificationView.swift in Sources */,
-				74618C2D29EBF34F00A9684B /* TabBarView.swift in Sources */,
 				2EBCF9A429AB5146003F6A1B /* OnboardingView.swift in Sources */,
+				74FB6F8F2A036A080092FA2B /* String.swift in Sources */,
+				74FB6F872A03697D0092FA2B /* TextFieldStyle.swift in Sources */,
+				746039B129EE575E0021AE1E /* VenueItem.swift in Sources */,
+				743CF3FD29F8C1A200931A06 /* ManageProfile.swift in Sources */,
 				2E2784CC29D96B75004ED35D /* FavouritesView.swift in Sources */,
 				7453C3D829DFC0C300A7B3D1 /* LoginModel.swift in Sources */,
-				2E07D72729AF5E8B00CB3EFD /* SetUpProfileVuew.swift in Sources */,
-				7453C3D629DFBF2600A7B3D1 /* LoginService.swift in Sources */,
+				2E07D72729AF5E8B00CB3EFD /* SetUpProfileView.swift in Sources */,
 				2E07D72129AF4A9200CB3EFD /* SendMeCodeView.swift in Sources */,
+				74FB6F932A03C0A90092FA2B /* FilterView.swift in Sources */,
+				74FB6F8A2A0369A80092FA2B /* Regex.swift in Sources */,
 				2E07D72529AF56FD00CB3EFD /* ChooseAccountTypeView.swift in Sources */,
+				74D51F4529FE38E20057763F /* RegistrationViewModel.swift in Sources */,
 				74618C3129EBF3E500A9684B /* ProfileView.swift in Sources */,
+				743CF40529F8C59100931A06 /* CustomSegmentedPicker.swift in Sources */,
 				746039A929ED48730021AE1E /* DetailsView.swift in Sources */,
 				2EBCF97D29AB4193003F6A1B /* WelcomeView.swift in Sources */,
 				2EBCF9A629AB8D38003F6A1B /* LoginView.swift in Sources */,
 				2E222F7D29C5AAF50016B5E6 /* LoginViewModel.swift in Sources */,
+				74D51F4329FE38C70057763F /* RegistrationModel.swift in Sources */,
+				743CF3FB29F8C18B00931A06 /* ChangePasswordInSettings.swift in Sources */,
 				746039AB29ED6A800021AE1E /* VenueRegistrationView.swift in Sources */,
+				743CF40129F8C1EB00931A06 /* Settings.swift in Sources */,
+				743CF41829F9573100931A06 /* APIError.swift in Sources */,
 				2E707AE229D289D700D47CB3 /* HomeView.swift in Sources */,
 				2EBCF97B29AB4193003F6A1B /* OrynTapApp.swift in Sources */,
+				746039B729EF995C0021AE1E /* TabBarView.swift in Sources */,
+				743CF3FF29F8C1BA00931A06 /* HelpAndFeedback.swift in Sources */,
 				74618C2F29EBF3DA00A9684B /* RequestsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +677,7 @@
 		};
 		2EBCF98629AB4194003F6A1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F8E7AFB97FD4621F133796D /* Pods-OrynTap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -521,6 +708,7 @@
 		};
 		2EBCF98729AB4194003F6A1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 070288569849A2F8A91D98A1 /* Pods-OrynTap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -581,6 +769,14 @@
 				minimumVersion = 0.9.0;
 			};
 		};
+		743CF41029F94ACC00931A06 /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-protobuf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -588,6 +784,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2E222F8429C5E3B30016B5E6 /* XCRemoteSwiftPackageReference "iPhoneNumberField" */;
 			productName = iPhoneNumberField;
+		};
+		743CF41129F94ACC00931A06 /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 743CF41029F94ACC00931A06 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
+		};
+		743CF41329F94ACC00931A06 /* SwiftProtobufPluginLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 743CF41029F94ACC00931A06 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobufPluginLibrary;
+		};
+		743CF41529F94ACC00931A06 /* protoc-gen-swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 743CF41029F94ACC00931A06 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = "protoc-gen-swift";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
