@@ -1,11 +1,6 @@
-//
-//  RegistrationViewModel.swift
-//  OrynTap
-//
-//  Created by Тынысбек Жанагуль on 30.04.2023.
-//
 
-import Foundation
+import SwiftUI
+import Combine
 
 class RegistrationViewModel: ObservableObject {
     @Published var user = RegisterRequestModel(type: 0, phone: "", password: "", firstName: "", lastName: "")

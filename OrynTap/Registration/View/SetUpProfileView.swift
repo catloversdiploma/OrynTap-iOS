@@ -1,13 +1,17 @@
 
 
 import SwiftUI
+import iPhoneNumberField
 
 struct SetUpProfileView: View {
+    @State private var goesToSendCodePage: Bool = false
     @State var firstName: String = ""
     @State var lastName: String = ""
     @State var dateOfBirth: String = ""
     @State var password: String = ""
     @State var confirmPassword: String = ""
+    @State var isEditing: Bool = true
+    @State private var borderColor = Color.gray
     
     @StateObject private var viewModel = RegistrationViewModel()
     
@@ -34,15 +38,15 @@ struct SetUpProfileView: View {
             
                 
             VStack(alignment: .leading, spacing: 15) {
-                TextField("Phone number", text: self.$viewModel.user.phone)
+                iPhoneNumberField("Phone number", text: $viewModel.user.phone, isEditing: $isEditing)
+                    .prefixHidden(false)
+                    .maximumDigits(10)
                     .font(Font.custom("SFProText-Semibold", size: 16))
                     .padding()
                     .frame(height: 55)
                     .overlay(RoundedRectangle(cornerRadius: 25.0).strokeBorder(Color(.lightGray), style: StrokeStyle(lineWidth: 1.0)))
                     .padding(.leading, 25)
                     .padding(.trailing, 25)
-                    
-                
                 TextField("First Name", text: self.$viewModel.user.lastName)
                     .font(Font.custom("SFProText-Semibold", size: 16))
                     .padding()
@@ -50,6 +54,9 @@ struct SetUpProfileView: View {
                     .overlay(RoundedRectangle(cornerRadius: 25.0).strokeBorder(Color(.lightGray), style: StrokeStyle(lineWidth: 1.0)))
                     .padding(.leading, 25)
                     .padding(.trailing, 25)
+                    .onChange(of: viewModel.user.lastName) { newValue in
+                        
+                    }
                     
                 
                 TextField("Last Name", text: $dateOfBirth)
@@ -82,23 +89,24 @@ struct SetUpProfileView: View {
                     .padding(EdgeInsets(top: 25, leading: 25, bottom: 25, trailing: 25))
                     
             }
-            
-            Button(action: {
-                viewModel.register()
-            }) {
-                Text("Continue")
-                    .font(Font.custom("SFProText-Semibold", size: 16))
-                    .frame(width: 320)
-                    .frame(height: 30)
-                    .foregroundColor(.white)
+            NavigationLink(destination: NewPasswordView(), isActive: $goesToSendCodePage)
+            {
+                Button(action: {
+                    goesToSendCodePage = true
+                }) {
+                    Text("Continue")
+                        .font(Font.custom("SFProText-Semibold", size: 16))
+                        .frame(width: 320)
+                        .frame(height: 30)
+                        .foregroundColor(.white)
+                }
+                .tint(Color("mainColor"))
+                .buttonStyle (.borderedProminent)
+                .buttonBorderShape (.capsule)
+                .controlSize(.large)
+                .padding(.leading, 20)
+                .padding(.trailing, 20)
             }
-            .tint(Color("mainColor"))
-            .buttonStyle (.borderedProminent)
-            .buttonBorderShape (.capsule)
-            .controlSize(.large)
-            .padding(.leading, 20)
-            .padding(.trailing, 20)
-            
         }.frame(
             minWidth: 0,
             maxWidth: .infinity,
