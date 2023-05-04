@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2E07D72129AF4A9200CB3EFD /* SendMeCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E07D72029AF4A9200CB3EFD /* SendMeCodeView.swift */; };
 		2E07D72329AF525300CB3EFD /* CodeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E07D72229AF525300CB3EFD /* CodeVerificationView.swift */; };
-		2E07D72529AF56FD00CB3EFD /* ChooseAccountTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E07D72429AF56FD00CB3EFD /* ChooseAccountTypeView.swift */; };
 		2E07D72729AF5E8B00CB3EFD /* SetUpProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E07D72629AF5E8B00CB3EFD /* SetUpProfileView.swift */; };
 		2E10D86029B4B12400FEC10D /* NewPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E10D85F29B4B12400FEC10D /* NewPasswordView.swift */; };
 		2E222F7D29C5AAF50016B5E6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E222F7C29C5AAF50016B5E6 /* LoginViewModel.swift */; };
@@ -46,7 +45,6 @@
 		743CF41829F9573100931A06 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743CF41729F9573100931A06 /* APIError.swift */; };
 		7453C3D829DFC0C300A7B3D1 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7453C3D729DFC0C300A7B3D1 /* LoginModel.swift */; };
 		746039A929ED48730021AE1E /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746039A829ED48730021AE1E /* DetailsView.swift */; };
-		746039AB29ED6A800021AE1E /* VenueRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746039AA29ED6A800021AE1E /* VenueRegistrationView.swift */; };
 		746039B129EE575E0021AE1E /* VenueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746039B029EE575E0021AE1E /* VenueItem.swift */; };
 		746039B729EF995C0021AE1E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746039B629EF995C0021AE1E /* TabBarView.swift */; };
 		74618C2F29EBF3DA00A9684B /* RequestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74618C2E29EBF3DA00A9684B /* RequestsView.swift */; };
@@ -58,6 +56,8 @@
 		74FB6F8A2A0369A80092FA2B /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB6F892A0369A80092FA2B /* Regex.swift */; };
 		74FB6F8F2A036A080092FA2B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB6F8E2A036A080092FA2B /* String.swift */; };
 		74FB6F932A03C0A90092FA2B /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB6F922A03C0A90092FA2B /* FilterView.swift */; };
+		74FB6F952A03F4E50092FA2B /* VenueRegistrationViewUpdated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB6F942A03F4E50092FA2B /* VenueRegistrationViewUpdated.swift */; };
+		74FB6F962A03F5430092FA2B /* ChooseAccountTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E07D72429AF56FD00CB3EFD /* ChooseAccountTypeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,7 +100,6 @@
 		743CF41729F9573100931A06 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		7453C3D729DFC0C300A7B3D1 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		746039A829ED48730021AE1E /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
-		746039AA29ED6A800021AE1E /* VenueRegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenueRegistrationView.swift; path = ../../../../Downloads/VenueRegistrationView.swift; sourceTree = "<group>"; };
 		746039B029EE575E0021AE1E /* VenueItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueItem.swift; sourceTree = "<group>"; };
 		746039B629EF995C0021AE1E /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		74618C2E29EBF3DA00A9684B /* RequestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsView.swift; sourceTree = "<group>"; };
@@ -112,6 +111,7 @@
 		74FB6F892A0369A80092FA2B /* Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 		74FB6F8E2A036A080092FA2B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		74FB6F922A03C0A90092FA2B /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		74FB6F942A03F4E50092FA2B /* VenueRegistrationViewUpdated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueRegistrationViewUpdated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +145,6 @@
 			children = (
 				74D51F4129FE38B50057763F /* Model */,
 				74D51F4029FE38AB0057763F /* ViewModel */,
-				746039AA29ED6A800021AE1E /* VenueRegistrationView.swift */,
 				2E10D85B29B4AAF500FEC10D /* View */,
 			);
 			path = Registration;
@@ -156,6 +155,7 @@
 			children = (
 				2E07D72429AF56FD00CB3EFD /* ChooseAccountTypeView.swift */,
 				2E07D72629AF5E8B00CB3EFD /* SetUpProfileView.swift */,
+				74FB6F942A03F4E50092FA2B /* VenueRegistrationViewUpdated.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -524,6 +524,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74FB6F842A03693D0092FA2B /* CustomTextField.swift in Sources */,
+				74FB6F962A03F5430092FA2B /* ChooseAccountTypeView.swift in Sources */,
 				2E10D86029B4B12400FEC10D /* NewPasswordView.swift in Sources */,
 				2E07D72329AF525300CB3EFD /* CodeVerificationView.swift in Sources */,
 				2EBCF9A429AB5146003F6A1B /* OnboardingView.swift in Sources */,
@@ -537,9 +538,9 @@
 				2E07D72129AF4A9200CB3EFD /* SendMeCodeView.swift in Sources */,
 				74FB6F932A03C0A90092FA2B /* FilterView.swift in Sources */,
 				74FB6F8A2A0369A80092FA2B /* Regex.swift in Sources */,
-				2E07D72529AF56FD00CB3EFD /* ChooseAccountTypeView.swift in Sources */,
 				74D51F4529FE38E20057763F /* RegistrationViewModel.swift in Sources */,
 				74618C3129EBF3E500A9684B /* ProfileView.swift in Sources */,
+				74FB6F952A03F4E50092FA2B /* VenueRegistrationViewUpdated.swift in Sources */,
 				743CF40529F8C59100931A06 /* CustomSegmentedPicker.swift in Sources */,
 				746039A929ED48730021AE1E /* DetailsView.swift in Sources */,
 				2EBCF97D29AB4193003F6A1B /* WelcomeView.swift in Sources */,
@@ -547,7 +548,6 @@
 				2E222F7D29C5AAF50016B5E6 /* LoginViewModel.swift in Sources */,
 				74D51F4329FE38C70057763F /* RegistrationModel.swift in Sources */,
 				743CF3FB29F8C18B00931A06 /* ChangePasswordInSettings.swift in Sources */,
-				746039AB29ED6A800021AE1E /* VenueRegistrationView.swift in Sources */,
 				743CF40129F8C1EB00931A06 /* Settings.swift in Sources */,
 				743CF41829F9573100931A06 /* APIError.swift in Sources */,
 				2E707AE229D289D700D47CB3 /* HomeView.swift in Sources */,

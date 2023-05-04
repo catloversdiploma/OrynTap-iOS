@@ -46,7 +46,7 @@ struct ChooseAccountTypeView: View {
                     .padding(.trailing, 25)
                     
                 }
-                NavigationLink(destination: VenueRegistrationView(), isActive: $goesToVenueRegistrationPage)
+                NavigationLink(destination: VenueRegistrationViewUpdated(), isActive: $goesToVenueRegistrationPage)
                 {
                     Button(action: {
                         goesToVenueRegistrationPage = true
