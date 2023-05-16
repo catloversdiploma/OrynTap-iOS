@@ -18,6 +18,7 @@ struct VenueRegistrationViewUpdated: View {
     @State private var selectedImage: Image?
     @State var phoneNumber: String = ""
     @State var isEditing: Bool = true
+    @State private var goesToOwnerMainPage: Bool = false
     
     var body: some View {
         //NavigationStack
@@ -131,24 +132,25 @@ struct VenueRegistrationViewUpdated: View {
                 .overlay(RoundedRectangle(cornerRadius: 25.0).strokeBorder(Color(.lightGray), style: StrokeStyle(lineWidth: 1.0)))
                 .padding(.leading, 25)
                 .padding(.trailing, 25)
-            
-            Button(action: {
-               
-            }) {
-                Text("Save")
-                    .font(Font.custom("SFProText-Semibold", size: 20))
-                    .frame(width: 320)
-                    .frame(height: 30)
-                    .foregroundColor(.white)
+            NavigationLink(destination: VenueOwnerTabBarView(), isActive: $goesToOwnerMainPage)
+            {
+                Button(action: {
+                    goesToOwnerMainPage = true
+                }) {
+                    Text("Save")
+                        .font(Font.custom("SFProText-Semibold", size: 20))
+                        .frame(width: 320)
+                        .frame(height: 30)
+                        .foregroundColor(.white)
+                }
+                .tint(Color("mainColor"))
+                .buttonStyle (.borderedProminent)
+                .buttonBorderShape (.capsule)
+                .controlSize(.large)
+                .padding(.leading, 20)
+                .padding(.trailing, 20)
+                .disabled(venueName.isEmpty || city.isEmpty || address.isEmpty || selectedImage==nil || phoneNumber.isEmpty)
             }
-            .tint(Color("mainColor"))
-            .buttonStyle (.borderedProminent)
-            .buttonBorderShape (.capsule)
-            .controlSize(.large)
-            .padding(.leading, 20)
-            .padding(.trailing, 20)
-            .disabled(venueName.isEmpty || city.isEmpty || address.isEmpty || selectedImage==nil || phoneNumber.isEmpty)
-            
         }.frame(
             minWidth: 0,
             maxWidth: .infinity,

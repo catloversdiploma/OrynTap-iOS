@@ -56,7 +56,6 @@ struct LoginView: View {
                                 goesToMainPage = true
                             }
                         }
-                        
                     }) {
                         Text("Sign in")
                             .font(Font.custom("SFProText-Semibold", size: 16))

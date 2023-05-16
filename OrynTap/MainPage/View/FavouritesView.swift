@@ -1,9 +1,3 @@
-//
-//  LikedView.swift
-//  OrynTap
-//
-//  Created by Zhanagul on 02.04.2023.
-//
 
 import SwiftUI
 
@@ -25,36 +19,36 @@ struct FavouritesView: View {
                         .frame(width: 360, height: 200)
                     VStack {
                         HStack() {
-                            Image("rest1")
+                            Image("image0")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .cornerRadius(5)
                                 .frame(width: 168, height: 115)
                             VStack(spacing: 20) {
-                                Text("Arista")
+                                Text("Test_Venue")
                                     .font(Font.custom("SFProText-Medium", size: 21))
                                     .foregroundColor(Color("darkGray"))
                                 VStack(alignment: .leading, spacing: 8) {
-                                    Text("10 000 - 15 000 ₸")
+                                    Text("9990 - 77990 ₸")
                                         .font(Font.custom("SFProText-Medium", size: 15))
                                         .foregroundColor(Color("darkGray"))
-                                    Text("150 - 200 seats")
+                                    Text("50 - 250 seats")
                                         .font(Font.custom("SFProText-Medium", size: 15))
                                         .foregroundColor(Color("darkGray"))
                                 }
                             }
                         }
                         
-                        HStack(spacing: 60) {
-                            Text("Kazbek bee district, Respublika, 104")
-                                .font(Font.custom("SFProText-Medium", size: 13))
-                                .foregroundColor(Color("darkGray"))
+                        HStack(spacing: 150) {
                             Button(action: {
                                 
                             }) {
                                     Image(systemName: "heart.fill")
                                         .foregroundColor(Color("mainColor"))
                             }
+                            Text("Abay av. 100")
+                                .font(Font.custom("SFProText-Medium", size: 13))
+                                .foregroundColor(Color("darkGray"))
                         }
                     }
                 }

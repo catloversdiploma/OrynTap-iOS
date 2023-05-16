@@ -1,9 +1,4 @@
-//
-//  RequestsView.swift
-//  OrynTap
-//
-//  Created by Тынысбек Жанагуль on 16.04.2023.
-//
+
 
 import SwiftUI
 

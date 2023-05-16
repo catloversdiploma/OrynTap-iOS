@@ -5,7 +5,7 @@ import SwiftUI
 struct SendMeCodeView: View {
     @State var username: String = ""
     @StateObject private var loginData = LoginViewModel()
-    @State private var goesToSendMeCodePage: Bool = false
+    @State private var goesCodeVerificationPage: Bool = false
     var body: some View {
         VStack(alignment: .leading, spacing: 160) {
             VStack(alignment: .leading, spacing:20) {
@@ -34,10 +34,10 @@ struct SendMeCodeView: View {
                         }
                     }
             }
-            NavigationLink(destination: SendMeCodeView(), isActive: $goesToSendMeCodePage)
+            NavigationLink(destination: CodeVerificationView(), isActive: $goesCodeVerificationPage)
             {
                 Button(action: {
-                    goesToSendMeCodePage = true
+                    goesCodeVerificationPage = true
                 }) {
                     Text("Send me the code")
                         .font(Font.custom("SFProText-Semibold", size: 16))

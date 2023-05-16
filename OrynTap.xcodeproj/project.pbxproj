@@ -49,6 +49,15 @@
 		746039B729EF995C0021AE1E /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746039B629EF995C0021AE1E /* TabBarView.swift */; };
 		74618C2F29EBF3DA00A9684B /* RequestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74618C2E29EBF3DA00A9684B /* RequestsView.swift */; };
 		74618C3129EBF3E500A9684B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74618C3029EBF3E500A9684B /* ProfileView.swift */; };
+		749DE92C2A106E72007CC384 /* BookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749DE92B2A106E72007CC384 /* BookingView.swift */; };
+		749DE92E2A10F33E007CC384 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749DE92D2A10F33E007CC384 /* Database.swift */; };
+		749DE9302A11084D007CC384 /* BookingConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749DE92F2A11084D007CC384 /* BookingConfirmView.swift */; };
+		74ACCEA72A05062D0078DB73 /* VenueOwnerTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ACCEA62A05062D0078DB73 /* VenueOwnerTabBarView.swift */; };
+		74ACCEAB2A0506CC0078DB73 /* OwnerHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ACCEAA2A0506CC0078DB73 /* OwnerHomeView.swift */; };
+		74ACCEAD2A0507450078DB73 /* OwnerCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ACCEAC2A0507450078DB73 /* OwnerCalendarView.swift */; };
+		74ACCEAF2A0507590078DB73 /* SetupVenueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ACCEAE2A0507590078DB73 /* SetupVenueView.swift */; };
+		74ACCEB12A05076F0078DB73 /* OwnerProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ACCEB02A05076F0078DB73 /* OwnerProfileView.swift */; };
+		74ACCEB32A0A67870078DB73 /* VenuesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74ACCEB22A0A67870078DB73 /* VenuesViewModel.swift */; };
 		74D51F4329FE38C70057763F /* RegistrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D51F4229FE38C70057763F /* RegistrationModel.swift */; };
 		74D51F4529FE38E20057763F /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D51F4429FE38E20057763F /* RegistrationViewModel.swift */; };
 		74FB6F842A03693D0092FA2B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FB6F832A03693D0092FA2B /* CustomTextField.swift */; };
@@ -104,6 +113,15 @@
 		746039B629EF995C0021AE1E /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		74618C2E29EBF3DA00A9684B /* RequestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestsView.swift; sourceTree = "<group>"; };
 		74618C3029EBF3E500A9684B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		749DE92B2A106E72007CC384 /* BookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
+		749DE92D2A10F33E007CC384 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		749DE92F2A11084D007CC384 /* BookingConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingConfirmView.swift; sourceTree = "<group>"; };
+		74ACCEA62A05062D0078DB73 /* VenueOwnerTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueOwnerTabBarView.swift; sourceTree = "<group>"; };
+		74ACCEAA2A0506CC0078DB73 /* OwnerHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerHomeView.swift; sourceTree = "<group>"; };
+		74ACCEAC2A0507450078DB73 /* OwnerCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerCalendarView.swift; sourceTree = "<group>"; };
+		74ACCEAE2A0507590078DB73 /* SetupVenueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupVenueView.swift; sourceTree = "<group>"; };
+		74ACCEB02A05076F0078DB73 /* OwnerProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerProfileView.swift; sourceTree = "<group>"; };
+		74ACCEB22A0A67870078DB73 /* VenuesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesViewModel.swift; sourceTree = "<group>"; };
 		74D51F4229FE38C70057763F /* RegistrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModel.swift; sourceTree = "<group>"; };
 		74D51F4429FE38E20057763F /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		74FB6F832A03693D0092FA2B /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -199,6 +217,7 @@
 		2E28311929D1EAA3009C23EC /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
+				749DE92D2A10F33E007CC384 /* Database.swift */,
 				746039AF29EE573C0021AE1E /* ViewModel */,
 				746039AE29EE57330021AE1E /* Model */,
 				2E707ADE29D2883900D47CB3 /* View */,
@@ -221,6 +240,8 @@
 				743CF40029F8C1EB00931A06 /* Settings.swift */,
 				743CF40429F8C59100931A06 /* CustomSegmentedPicker.swift */,
 				74FB6F922A03C0A90092FA2B /* FilterView.swift */,
+				749DE92B2A106E72007CC384 /* BookingView.swift */,
+				749DE92F2A11084D007CC384 /* BookingConfirmView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -255,6 +276,7 @@
 				2E10D85929B4AA6600FEC10D /* Login */,
 				2E10D85A29B4AA6D00FEC10D /* Registration */,
 				2E28311929D1EAA3009C23EC /* MainPage */,
+				74ACCEA52A04FE0E0078DB73 /* VenueOwnerMainPage */,
 			);
 			path = OrynTap;
 			sourceTree = "<group>";
@@ -315,8 +337,21 @@
 		746039AF29EE573C0021AE1E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				74ACCEB22A0A67870078DB73 /* VenuesViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		74ACCEA52A04FE0E0078DB73 /* VenueOwnerMainPage */ = {
+			isa = PBXGroup;
+			children = (
+				74ACCEA62A05062D0078DB73 /* VenueOwnerTabBarView.swift */,
+				74ACCEAA2A0506CC0078DB73 /* OwnerHomeView.swift */,
+				74ACCEAC2A0507450078DB73 /* OwnerCalendarView.swift */,
+				74ACCEAE2A0507590078DB73 /* SetupVenueView.swift */,
+				74ACCEB02A05076F0078DB73 /* OwnerProfileView.swift */,
+			);
+			path = VenueOwnerMainPage;
 			sourceTree = "<group>";
 		};
 		74D51F4029FE38AB0057763F /* ViewModel */ = {
@@ -525,18 +560,24 @@
 			files = (
 				74FB6F842A03693D0092FA2B /* CustomTextField.swift in Sources */,
 				74FB6F962A03F5430092FA2B /* ChooseAccountTypeView.swift in Sources */,
+				749DE9302A11084D007CC384 /* BookingConfirmView.swift in Sources */,
 				2E10D86029B4B12400FEC10D /* NewPasswordView.swift in Sources */,
 				2E07D72329AF525300CB3EFD /* CodeVerificationView.swift in Sources */,
+				74ACCEAD2A0507450078DB73 /* OwnerCalendarView.swift in Sources */,
 				2EBCF9A429AB5146003F6A1B /* OnboardingView.swift in Sources */,
+				74ACCEAF2A0507590078DB73 /* SetupVenueView.swift in Sources */,
 				74FB6F8F2A036A080092FA2B /* String.swift in Sources */,
 				74FB6F872A03697D0092FA2B /* TextFieldStyle.swift in Sources */,
 				746039B129EE575E0021AE1E /* VenueItem.swift in Sources */,
 				743CF3FD29F8C1A200931A06 /* ManageProfile.swift in Sources */,
+				74ACCEA72A05062D0078DB73 /* VenueOwnerTabBarView.swift in Sources */,
 				2E2784CC29D96B75004ED35D /* FavouritesView.swift in Sources */,
 				7453C3D829DFC0C300A7B3D1 /* LoginModel.swift in Sources */,
 				2E07D72729AF5E8B00CB3EFD /* SetUpProfileView.swift in Sources */,
+				74ACCEAB2A0506CC0078DB73 /* OwnerHomeView.swift in Sources */,
 				2E07D72129AF4A9200CB3EFD /* SendMeCodeView.swift in Sources */,
 				74FB6F932A03C0A90092FA2B /* FilterView.swift in Sources */,
+				749DE92C2A106E72007CC384 /* BookingView.swift in Sources */,
 				74FB6F8A2A0369A80092FA2B /* Regex.swift in Sources */,
 				74D51F4529FE38E20057763F /* RegistrationViewModel.swift in Sources */,
 				74618C3129EBF3E500A9684B /* ProfileView.swift in Sources */,
@@ -547,6 +588,7 @@
 				2EBCF9A629AB8D38003F6A1B /* LoginView.swift in Sources */,
 				2E222F7D29C5AAF50016B5E6 /* LoginViewModel.swift in Sources */,
 				74D51F4329FE38C70057763F /* RegistrationModel.swift in Sources */,
+				74ACCEB32A0A67870078DB73 /* VenuesViewModel.swift in Sources */,
 				743CF3FB29F8C18B00931A06 /* ChangePasswordInSettings.swift in Sources */,
 				743CF40129F8C1EB00931A06 /* Settings.swift in Sources */,
 				743CF41829F9573100931A06 /* APIError.swift in Sources */,
@@ -554,6 +596,8 @@
 				2EBCF97B29AB4193003F6A1B /* OrynTapApp.swift in Sources */,
 				746039B729EF995C0021AE1E /* TabBarView.swift in Sources */,
 				743CF3FF29F8C1BA00931A06 /* HelpAndFeedback.swift in Sources */,
+				74ACCEB12A05076F0078DB73 /* OwnerProfileView.swift in Sources */,
+				749DE92E2A10F33E007CC384 /* Database.swift in Sources */,
 				74618C2F29EBF3DA00A9684B /* RequestsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

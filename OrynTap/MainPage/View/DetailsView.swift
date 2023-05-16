@@ -1,9 +1,3 @@
-//
-//  DetailsView.swift
-//  OrynTap
-//
-//  Created by Тынысбек Жанагуль on 17.04.2023.
-//
 
 import SwiftUI
 
@@ -11,8 +5,8 @@ struct DetailsView: View {
     
     @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
     var numberOfPhotos = 4
-    var venue: VenueItem = venues[0]
-    
+    @StateObject var viewModel = VenuesViewModel()
+    @State private var goesToBookView: Bool = false
     var body: some View {
         ScrollView(.vertical, showsIndicators: true, content: {
             VStack(alignment: .leading) {
@@ -29,7 +23,7 @@ struct DetailsView: View {
                     })
                 Spacer()
                 
-                Image(venue.image)
+                Image("image0")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 360 ,height: 250)
@@ -38,17 +32,28 @@ struct DetailsView: View {
                     .padding(.trailing)
                 
                 VStack(alignment: .leading) {
-                    Text(venue.title)
-                        .font(Font.custom("SFProText-Medium", size: 36))
-                        .foregroundColor(Color("darkGray"))
-                        .padding(.leading)
-                        .padding(.trailing)
+                    HStack(spacing: 200) {
+                        Text(viewModel.venues.first?.name ?? "")
+                            .font(Font.custom("SFProText-Medium", size: 36))
+                            .foregroundColor(Color("darkGray"))
+                            .padding(.leading)
+                            .padding(.trailing)
+                            .lineLimit(1)
+                        Button(action: {
+                           
+                        }) {
+                            Image(systemName: "heart.fill" )
+                                .foregroundColor(Color("mainColor"))
+                                .frame(width: 40, height: 40)
+                                
+                        }
+                    }
                     Text("Karaganda city")
                         .font(Font.custom("SFProText-Medium", size: 16))
                         .foregroundColor(Color("darkGray"))
                         .padding(.leading)
                         .padding(.trailing)
-                    Text(venue.address)
+                    Text(viewModel.venues.first?.address ?? "")
                         .font(Font.custom("SFProText-Medium", size: 16))
                         .foregroundColor(Color("darkGray"))
                         .padding(.bottom, 25)
@@ -220,7 +225,41 @@ struct DetailsView: View {
                             .padding(.top, 10)
                             .padding(.leading)
                             .padding(.trailing)
+                        NavigationLink(destination: BookingView().navigationBarBackButtonHidden(true), isActive: $goesToBookView)
+                        {
+                            HStack {
+                                Button(action: {
+                                    goesToBookView = true
+                                }) {
+                                    Text("Book")
+                                        .font(Font.custom("SFProText-Semibold", size: 15))
+                                        .frame(width: 100)
+                                        .foregroundColor(Color.white)
+                                }
+                                .tint(Color("color1"))
+                                .buttonStyle (.borderedProminent)
+                                .buttonBorderShape (.capsule)
+                                .controlSize (.large)
+                                .padding(.leading)
+                                .padding(.trailing)
+                            }
+                            Button(action: {
+                                
+                            }) {
+                                Text("Call")
+                                    .font(Font.custom("SFProText-Semibold", size: 15))
+                                    .frame(width: 100)
+                                    .foregroundColor(Color.white)
+                            }
+                            .tint(Color.green)
+                            .buttonStyle (.borderedProminent)
+                            .buttonBorderShape (.capsule)
+                            .controlSize (.large)
+                        }
                         
+                        Text("Hello world").font(Font.custom("SFProText-Semibold", size: 40))
+                            .frame(width: 100)
+                            .foregroundColor(Color.white)
                     }
                 }
             }.padding(.top)
@@ -230,6 +269,6 @@ struct DetailsView: View {
 
 struct DetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailsView(venue: venues[0])
+        DetailsView()
     }
 }

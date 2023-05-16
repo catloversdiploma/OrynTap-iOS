@@ -11,7 +11,9 @@ struct SetUpProfileView: View {
     @State var password: String = ""
     @State var confirmPassword: String = ""
     @State var isEditing: Bool = true
-    @State private var borderColor = Color.gray
+    @State private var borderColor = Color(.lightGray)
+    @State private var isEditingChanged = false
+    @State private var isEditingChanged2 = false
     
     @StateObject private var viewModel = RegistrationViewModel()
     
@@ -44,33 +46,33 @@ struct SetUpProfileView: View {
                     .font(Font.custom("SFProText-Semibold", size: 16))
                     .padding()
                     .frame(height: 55)
-                    .overlay(RoundedRectangle(cornerRadius: 25.0).strokeBorder(Color(.lightGray), style: StrokeStyle(lineWidth: 1.0)))
+                    .overlay(RoundedRectangle(cornerRadius: 25.0).strokeBorder(isEditing ? Color("mainColor") : borderColor, style: StrokeStyle(lineWidth: 1.0)))
                     .padding(.leading, 25)
                     .padding(.trailing, 25)
-                TextField("First Name", text: self.$viewModel.user.lastName)
+                TextField("First Name", text: self.$viewModel.user.lastName, onEditingChanged: { isEditingChanged in
+                    self.isEditingChanged = isEditingChanged
+                })
                     .font(Font.custom("SFProText-Semibold", size: 16))
                     .padding()
                     .frame(height: 55)
-                    .overlay(RoundedRectangle(cornerRadius: 25.0).strokeBorder(Color(.lightGray), style: StrokeStyle(lineWidth: 1.0)))
+                    .overlay(RoundedRectangle(cornerRadius: 25.0).strokeBorder(isEditingChanged ? Color("mainColor") : borderColor, style: StrokeStyle(lineWidth: 1.0)))
                     .padding(.leading, 25)
                     .padding(.trailing, 25)
-                    .onChange(of: viewModel.user.lastName) { newValue in
-                        
-                    }
-                    
                 
-                TextField("Last Name", text: $dateOfBirth)
+                TextField("Last Name", text: $dateOfBirth, onEditingChanged: { isEditingChanged in
+                    self.isEditingChanged2 = isEditingChanged
+                })
                     .font(Font.custom("SFProText-Semibold", size: 16))
                     .padding()
                     .frame(height: 55)
-                    .overlay(RoundedRectangle(cornerRadius: 25.0).strokeBorder(Color(.lightGray), style: StrokeStyle(lineWidth: 1.0)))
+                    .overlay(RoundedRectangle(cornerRadius: 25.0).strokeBorder(isEditingChanged2 ? Color("mainColor") : borderColor, style: StrokeStyle(lineWidth: 1.0)))
                     .padding(.leading, 25)
                     .padding(.trailing, 25)
                 SecureField("Password", text: $viewModel.user.password)
                     .font(Font.custom("SFProText-Semibold", size: 16))
                     .padding()
                     .frame(height: 55)
-                    .overlay(RoundedRectangle(cornerRadius: 25.0).strokeBorder(Color(.lightGray), style: StrokeStyle(lineWidth: 1.0)))
+                    .overlay(RoundedRectangle(cornerRadius: 25.0).strokeBorder(borderColor, style: StrokeStyle(lineWidth: 1.0)))
                     .padding(.leading, 25)
                     .padding(.trailing, 25)
                 
@@ -78,7 +80,7 @@ struct SetUpProfileView: View {
                     .font(Font.custom("SFProText-Semibold", size: 16))
                     .padding()
                     .frame(height: 55)
-                    .overlay(RoundedRectangle(cornerRadius: 25.0).strokeBorder(Color(.lightGray), style: StrokeStyle(lineWidth: 1.0)))
+                    .overlay(RoundedRectangle(cornerRadius: 25.0).strokeBorder(borderColor, style: StrokeStyle(lineWidth: 1.0)))
                     .padding(.leading, 25)
                     .padding(.trailing, 25)
                 
@@ -89,7 +91,7 @@ struct SetUpProfileView: View {
                     .padding(EdgeInsets(top: 25, leading: 25, bottom: 25, trailing: 25))
                     
             }
-            NavigationLink(destination: NewPasswordView(), isActive: $goesToSendCodePage)
+            NavigationLink(destination: SendMeCodeView(), isActive: $goesToSendCodePage)
             {
                 Button(action: {
                     goesToSendCodePage = true
